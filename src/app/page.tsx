@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
     <div className="bg-[#f2f2ed] ">
-    <div className="max-w-[1200px] mx-auto py-20 md:pb-52 px-4">
+    <div className="max-w-[1200px] mx-auto py-20 lg:pb-52 px-4">
       <div className="md:mx-4 flex gap-4">
       <p className="text-xs bg-[#dad4c8] p-2 rounded-full">Revenue Operations</p>
       <div className="flex-1 border-b-2 border-dashed border-gray-400"></div>
@@ -32,7 +32,7 @@ export default function Home() {
     height={600
     }
     unoptimized
-    className='w-full h-[400px] object-cover'
+    className='w-full h-auto object-contain'
     />
 
     <Image
@@ -44,7 +44,7 @@ export default function Home() {
     }
     quality={100}
     unoptimized
-    className='absolute bottom-0 w-[1200px] h-auto left-1/2 -translate-x-1/2'  
+    className='absolute bottom-0 h-auto w-[400px] xs:w-[500px] sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[2100px] left-1/2 -translate-x-1/2 object-contain'  
     />
   </div>
 
