@@ -2,6 +2,8 @@
 import Image from 'next/image'
 
 export default function Home() {
+  /*
+  </div> */
   return (
     <div>
     <div className="bg-[#f2f2ed] ">
@@ -32,7 +34,7 @@ export default function Home() {
     height={600
     }
     unoptimized
-    className='w-full h-auto object-contain'
+    className='w-full max-h-[350px] object-cover'
     />
 
     <Image
@@ -44,10 +46,13 @@ export default function Home() {
     }
     quality={100}
     unoptimized
-    className='absolute bottom-0 h-auto w-[400px] xs:w-[500px] sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[2100px] left-1/2 -translate-x-1/2 object-contain'  
+    className='absolute bottom-0 h-auto w-[150px] xxs:w-[350px] xs:w-[500px] sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1200px] left-1/2 -translate-x-1/2 object-contain'  
     />
   </div>
 
+  <div>
+    <h1>Hello world</h1>
+  </div>
   </div>
   );
 }
