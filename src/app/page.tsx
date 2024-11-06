@@ -46,7 +46,7 @@ export default function Home() {
     }
     quality={100}
     unoptimized
-    className='absolute bottom-0 h-auto w-[150px] xxs:w-[350px] xs:w-[500px] sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1200px] left-1/2 -translate-x-1/2 object-contain'  
+    className='absolute bottom-0 h-auto w-[150px] xxs:w-[320px] xs:w-[500px] sm:w-[600px] md:w-[700px] 2md:w-[800px] lg:w-[900px] xl:w-[1200px] left-1/2 -translate-x-1/2 object-contain'  
     />
   </div>
 
