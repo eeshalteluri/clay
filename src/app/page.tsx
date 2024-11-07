@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image'
 import BenefitCard from './components/BenefitCard';
+import FeatureCard from './components/FeatureCard';
 
 export default function Home() {
   /*
@@ -51,7 +52,7 @@ export default function Home() {
     />
   </div>
 
-  <div className='max-w-[1200px] mx-auto py-20 p-4 grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row gap-4'>
+  <div className='max-w-[1200px] mx-auto pt-20 p-4 grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row gap-8'>
     <BenefitCard 
     title={'Improve enrichment coverage with waterfalls'}
     description={'Access your existing subscriptions and 80+ other databases just with Clay. Search multiple providers to maximize coverage: we often 2-3x coverage vs. using single providers.'}
@@ -69,6 +70,46 @@ export default function Home() {
     description={'Sync all work seamlessly between Clay and your CRM. Bulk enrich and update records, auto-enrich inbound leads live, help SDRs enrich accounts on demand in Salesforce, and more.'}
     />
   </div>
+
+  <div className='max-w-[1200px] flex flex-col mx-auto pt-20 p-4 '>
+    <FeatureCard 
+    image = "/section1.avif"
+    alt = "Section 1"
+    title='Build custom lead scores to save sellers time'
+    description='Forget relying on just industry size or headcount. Create lead scoring filters that are unique to your business needs based on any data you can find on the internet.'
+    buttonText='Start list building'
+    reversed={false}
+    />
+    <FeatureCard 
+    image = "/section2.avif"
+    alt = "Section 2"
+    title='Auto-enrich and update records in your sleep'
+    description='Bulk enrich any set of records in your CRM to check for updates or changes in the fields you care about. Enrich and qualify inbound leads as they come in to increase your speed to lead.
+'
+    buttonText='Explore automated enrichments'
+    reversed={true}
+    />
+
+    <FeatureCard
+    image='/section3.avif'
+    alt = "Section 3"
+    title='Build custom lead scores to save sellers time'
+    description='Forget relying on just industry size or headcount. Create lead scoring filters that are unique to your business needs based on any data you can find on the internet.'
+    buttonText='Explore scoring in Clay'
+    reversed={false}
+    />
+
+    <FeatureCard
+    image='/section4.avif'
+    alt = "Section 4"
+    title='Sync data to any database, sequencer, or CRM'
+    description='Once you’ve enriched your records in Clay, automatically sync them to live email sequences or your CRM to keep your data clean.'
+    buttonText='Get started today'
+    reversed={true}
+    />
+  </div>
+
+
   </div>
   );
 }
