@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image'
+import BenefitCard from './components/BenefitCard';
 
 export default function Home() {
   /*
@@ -10,7 +11,7 @@ export default function Home() {
     <div className="max-w-[1200px] mx-auto py-20 lg:pb-52 px-4">
       <div className="md:mx-4 flex gap-4">
       <p className="text-xs bg-[#dad4c8] p-2 rounded-full">Revenue Operations</p>
-      <div className="flex-1 border-b-2 border-dashed border-gray-400"></div>
+      <div className="hidden xs:block flex-1 border-b-2 border-dashed border-gray-400"></div>
       </div>
 
       <div className="mt-4 md:flex md:justify-between md:items-center">
@@ -50,8 +51,23 @@ export default function Home() {
     />
   </div>
 
-  <div>
-    <h1>Hello world</h1>
+  <div className='max-w-[1200px] mx-auto py-20 p-4 grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row gap-4'>
+    <BenefitCard 
+    title={'Improve enrichment coverage with waterfalls'}
+    description={'Access your existing subscriptions and 80+ other databases just with Clay. Search multiple providers to maximize coverage: we often 2-3x coverage vs. using single providers.'}
+    />
+    <BenefitCard 
+    title={'Replace all manual sales research'}
+    description={'Use our AI web research agent to replace manual sales workflows, whether checking if a company is B2B, looking for specific industry markers, or finding certifications.'}
+    />
+    <BenefitCard 
+    title={'Implement custom scoring with AI'}
+    description={'Firmographics arenot enough for deep ICP targeting. Create custom filters and lead scores based on the variables that matter most to your business.'}
+    />
+    <BenefitCard 
+    title={'Keep your CRM your final source of truth'}
+    description={'Sync all work seamlessly between Clay and your CRM. Bulk enrich and update records, auto-enrich inbound leads live, help SDRs enrich accounts on demand in Salesforce, and more.'}
+    />
   </div>
   </div>
   );
