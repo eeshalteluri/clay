@@ -32,7 +32,7 @@ export function CarouselSize() {
   }, [api])
 
   return (
-    <div className="max-w-[1200px] mx-auto flex flex-col justify-center items-center pt-20 pb-4 px-4">
+    <div className="max-w-[1200px] mx-auto flex flex-col justify-center items-center pt-20 pb-6 px-4">
       <div className="w-full mb-4 flex flex-col md:flex-row justify-between">
         <h2 className="text-5xl font-bold">What our customers say about us...</h2>
 
