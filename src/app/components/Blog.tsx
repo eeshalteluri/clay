@@ -29,6 +29,8 @@ export function CarouselSize() {
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap())
     })
+
+    console.log(current)
   }, [api])
 
   return (
