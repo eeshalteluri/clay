@@ -203,7 +203,7 @@ export default function Home() {
             alt="With Clay"
             width={630}
             height={630}
-            className='w-full mmd:w-1/2 h-auto'
+            className='w-full mmd:w-1/2 h-[470px]'
             />
            </div>
           
@@ -324,7 +324,7 @@ export default function Home() {
         </div>
         </div>
 
-        <div className='max-w-[1200px] mx-auto px-4 py-4 flex flex-col justify-center items-center md:items-start my-12'>
+        <div className='w-full mx-auto md:mx-0 px-4 py-4 flex flex-col justify-center items-center md:items-start my-12'>
           <Image
             src="/clayFooter.png"
             alt="Logo"
