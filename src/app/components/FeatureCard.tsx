@@ -22,12 +22,12 @@ const FeatureCard = ({image, alt,title, description, reversed, buttonText}: Feat
         />
 
         <div className='lg:w-1/2 flex flex-col justify-center mt-4 md:mt-0 md:py-8'>
-            <h3 className="text-6xl font-semibold">{title}</h3>
+            <h3 className="text-4xl md:text-6xl font-semibold">{title}</h3>
             <p className="text-md my-4">{description}</p>
 
             <button
             className='text-start'
-            >{buttonText}</button>
+            >{`${buttonText} ->`} </button>
         </div>
     </div>
   )
